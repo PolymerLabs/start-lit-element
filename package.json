@@ -2,12 +2,13 @@
   "name": "lit-element-redux",
   "version": "1.0.0",
   "description": "Hello World with lit-element and Redux",
+  "repository": "https://github.com/katejeffreys/lit-element-redux.git",
   "main": "simple-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "katejeffreys",
-  "license": "BSD-3-CLAUSE",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "latest",
     "@polymer/lit-element": "latest",
