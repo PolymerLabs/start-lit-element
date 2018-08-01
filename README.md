@@ -57,7 +57,7 @@ polymer serve
 "description": "Hello World with lit-element and redux",
 "start_url": "index.html",
 "name": "lit-element-redux",
-"short_name": "lit-element-redux",
+"short_name": "lit-el-redux",
 "background_color": "#ffffff",
 "theme_color":"#ffffff",
 ```
