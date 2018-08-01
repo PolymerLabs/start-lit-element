@@ -54,7 +54,7 @@ class SimpleApp extends LitElement {
         :host([hidden]) { display: none; }
         :host, button { font-size: 16px; }
       </style>
-      <unstatey-element greeting="${greeting}"></unstatey-element>
+      <unstatey-element helloWorld="${greeting}"></unstatey-element>
       <button on-click="${() => this.makeNewGreeting()}">
         make new greeting
       </button>

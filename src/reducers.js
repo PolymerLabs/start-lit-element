@@ -7,7 +7,7 @@ import {
 
 // Create initial state to use as default when no state is supplied
 export const initialState = {
-  greeting: 'Hello World!',
+  greeting: 'Hello World! ',
   listOfThings: [
     {thing:'sdf', bool:false},
     {thing:'fdfb', bool:false},
