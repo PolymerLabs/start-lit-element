@@ -1,0 +1,18 @@
+{
+  "shell": "src/simple-app.js",
+  "entrypoint": "index.html",
+
+  "npm": true,
+  "moduleResolution": "node",
+  "sources": ["src/**", "manifest/**", "manifest.json", "package.json"],
+  "extraDependencies": [
+    "robots.txt",
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [{
+    "name": "default",
+    "preset": "es6-unbundled",
+    "addServiceWorker": true,
+    "addPushManifest": true
+  }]
+}

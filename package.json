@@ -1,0 +1,16 @@
+{
+  "name": "lit-element-redux",
+  "version": "1.0.0",
+  "description": "Hello World with lit-element and Redux",
+  "main": "simple-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "katejeffreys",
+  "license": "BSD-3-CLAUSE",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "latest",
+    "@polymer/lit-element": "latest",
+    "redux": "^4.0.0"
+  }
+}
