@@ -2,6 +2,8 @@
 
 Boilerplate and hello world for a lit-element app with Redux, deploying on Firebase.
 
+https://lit-element-redux.firebaseapp.com/
+
 At the time of writing (August 1 2018) it was scoring 100% on all Lighthouse audits when deployed and was working fine on most recent Chrome, Safari and Firefox. Others untested.
 
 * [Clone](#clone-this-repo)
