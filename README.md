@@ -116,3 +116,13 @@ See the [Firebase CLI Reference](https://firebase.google.com/docs/cli) for more 
 At the time of writing (November 8 2018) this app was scoring 100% on all Lighthouse audits when deployed, and was working fine on the most recent versions of Chrome, Safari and Firefox. 
 
 Other browsers not tested - let me know of any [issues](https://github.com/PolymerLabs/start-lit-element/issues).
+
+## Known issues
+
+Dynamic `import` warning:
+
+```
+Could not resolve module specifier "require" in file "..src/start-lit-element.js".
+```
+
+See https://github.com/Polymer/tools/issues/131.
