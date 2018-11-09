@@ -3,10 +3,10 @@
   "version": "1.0",
   "manifest_version": 1,
 
-  "description": "Hello World with lit-element and Redux",
+  "description": "start-lit-element",
   "start_url": "index.html",
-  "name": "lit-element-redux",
-  "short_name": "lit-el-redux",
+  "name": "start-lit-element",
+  "short_name": "start-lit-el",
   "background_color": "#ffffff",
   "theme_color":"#ffffff",
   
