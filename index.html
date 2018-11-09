@@ -2,11 +2,6 @@
 
 <html lang="en">
 <head>
-  <!-- Small hack for Redux https://github.com/reduxjs/redux/issues/2907 -->
-  <script>
-    window.process = { env: { NODE_ENV: 'production' } };
-  </script>
-  
   <!-- Register service worker if supported. -->
   <!--
   <script>
@@ -23,35 +18,36 @@
   </script> 
   
   <!-- Change stuff here for your app -->
-  <script type="module" src="src/simple-app.js" defer></script>
-  <meta name="description" content="Hello World with lit-element and Redux">
+  <script type="module" src="src/start-lit-element.js" defer></script>
+  <meta name="description" content="start-lit-element">
   <meta name="theme-color" content="#ffffff">
-  <title>Hello World with lit-element and Redux</title>
+  <title>start-lit-element</title>
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="manifest" href="./manifest.json">
   <link rel="shortcut icon" href="/manifest/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="UTF-8">
-
-  <style>
-    html, button {
-      font-size: 16px;
-    }
-  </style>
 </head>
 <body>
-  <simple-app>
+
+  <!-- 
+    To configure starting state of the checkbox from markup: 
+    <start-lit-element pie="true"> 
+  -->
+  
+  <start-lit-element>
     <!-- Placeholders to improve time to first paint -->
-      <p>greeting:</p>
-      <button>make new greeting</button>
-      <h3>here is a list of things</h3>
-      <ul>
-        <li>thing 0: sdf, </li>
-        <li>thing 1: fdfb, </li>
-        <li>thing 2: axcv, </li>
-        <li>thing 3: qwgfv, </li>
-      </ul>
-    <button>toggle a random thing</button>
-  </simple-app>
+    <h1>Start LitElement!</h1>
+    <p>Hello World from LitElement</p>
+
+    <!-- Check for JavaScript -->
+    <p id="jsyes"></p>
+    <script type="text/javascript">
+      document.getElementById('jsyes').innerHTML='Loading...';
+    </script>
+    <noscript>
+      Could not render the custom element. Check that JavaScript is enabled.
+    </noscript>
+  </start-lit-element>
 </body>

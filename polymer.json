@@ -1,5 +1,5 @@
 {
-  "shell": "src/simple-app.js",
+  "shell": "src/start-lit-element.js",
   "entrypoint": "index.html",
 
   "npm": true,
@@ -10,9 +10,7 @@
     "node_modules/@webcomponents/webcomponentsjs/**"
   ],
   "builds": [{
-    "name": "default",
-    "preset": "es6-unbundled",
-    "addServiceWorker": true,
-    "addPushManifest": true
+    "bundle": true,
+    "js": { "minify": true }
   }]
 }

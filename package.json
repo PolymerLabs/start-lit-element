@@ -1,17 +1,16 @@
 {
-  "name": "lit-element-redux",
+  "name": "start-lit-element",
   "version": "1.0.0",
-  "description": "Hello World with lit-element and Redux",
-  "repository": "https://github.com/katejeffreys/lit-element-redux.git",
-  "main": "simple-app.js",
+  "description": "start-lit-element",
+  "repository": "https://github.com/PolymerLabs/start-lit-element.git",
+  "main": "start-lit-element.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "katejeffreys",
+  "author": "The Polymer Authors",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@webcomponents/webcomponentsjs": "latest",
-    "@polymer/lit-element": "latest",
-    "redux": "^4.0.0"
+    "@polymer/lit-element": "latest"
   }
 }
