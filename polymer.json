@@ -11,6 +11,8 @@
   ],
   "builds": [{
     "bundle": true,
-    "js": { "minify": true }
+    "js": { "minify": true },
+    "addServiceWorker": true,
+    "addPushManifest": true
   }]
 }
