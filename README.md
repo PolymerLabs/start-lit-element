@@ -47,7 +47,6 @@ polymer serve
 
 ```html
 <!-- Change stuff here for your app -->
-<script type="module" src="src/start-lit-element.js" defer></script>
 <meta name="description" content="start-lit-element">
 <meta name="theme-color" content="#ffffff">
 <title>start-lit-element</title>
@@ -113,9 +112,9 @@ See the [Firebase CLI Reference](https://firebase.google.com/docs/cli) for more 
 
 ## Browser compatibility and performance
 
-At the time of writing (November 8 2018) this app was scoring 100% on all Lighthouse audits when deployed, and was working fine on the most recent versions of Chrome, Safari and Firefox. 
+At the time of writing (Dec 11 2018) this app was scoring 100% on all Lighthouse audits when deployed, and was working fine on the most recent versions of Chrome, Safari, Firefox, and Edge.
 
-Other browsers not tested - let me know of any [issues](https://github.com/PolymerLabs/start-lit-element/issues).
+Let me know of any [issues](https://github.com/PolymerLabs/start-lit-element/issues).
 
 ## Known issues
 
