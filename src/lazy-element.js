@@ -9,14 +9,14 @@
  */
 
 // Import LitElement base class and html helper function
-import { LitElement, html} from '@polymer/lit-element';
+import { LitElement, html } from '@polymer/lit-element';
 
-class LazyElement extends LitElement {
+export class LazyElement extends LitElement {
   /**
    * Define a template for the new element by implementing LitElement's
    * `render` function. `render` must return a lit-html TemplateResult.
    */
-  render(){
+  render() {
     return html`
       <style>
         :host { display: block; }

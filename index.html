@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
   <!-- Register service worker if supported. -->
-  
   <!--
   <script>
     if ('serviceWorker' in navigator) {
@@ -11,15 +10,24 @@
     }
   </script>
   -->
-
+  
   <!-- Load polyfills -->
   <script 
     src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
     defer>
   </script> 
+
+  <!-- Load components via WebComponents.waitFor -->
+  <script type="module">
+    window.WebComponents = window.WebComponents || { 
+      waitFor(cb){ addEventListener('WebComponentsReady', cb) }
+    } 
+    WebComponents.waitFor(async () => { 
+      import('./src/start-lit-element.js');
+    });
+  </script>
   
   <!-- Change stuff here for your app -->
-  <script type="module" src="src/start-lit-element.js" defer></script>
   <meta name="description" content="start-lit-element">
   <meta name="theme-color" content="#ffffff">
   <title>start-lit-element</title>
