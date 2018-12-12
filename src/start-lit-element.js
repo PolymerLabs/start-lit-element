@@ -10,9 +10,9 @@
 
 
 // Import LitElement base class and html helper function
-import { LitElement, html} from '@polymer/lit-element';
+import { LitElement, html } from '@polymer/lit-element';
 
-class StartLitElement extends LitElement {
+export class StartLitElement extends LitElement {
   /**
    * Define properties. Properties defined here will be automatically 
    * observed.
@@ -89,13 +89,14 @@ class StartLitElement extends LitElement {
    * load it and remember that we loaded it.
    */
   async loadLazy() {
+    console.log('loadLazy');
     if(this.pie && !this.loadComplete) {
-      import('./lazy-element.js').then((LazyElement) => {
+      this.loadComplete = true;
+      return import('./lazy-element.js').then((LazyElement) => {
         console.log("LazyElement loaded");
       }).catch((reason) => {
         console.log("LazyElement failed to load", reason);
       });
-      this.loadComplete = true;
     }
   }
 }
