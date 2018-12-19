@@ -126,7 +126,7 @@ Could not resolve module specifier "require" in file "..src/start-lit-element.js
 
 See https://github.com/Polymer/tools/issues/131.
 
-(IE11 and Edge) Warning due to `<!--!` in minified HTML:
+(IE11 and Edge) Warning due to `<!--!` in built HTML:
 
 ```
 Unexpected character: U+0021 EXCLAMATION MARK (!)
