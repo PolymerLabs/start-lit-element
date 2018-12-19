@@ -118,10 +118,19 @@ Let me know of any [issues](https://github.com/PolymerLabs/start-lit-element/iss
 
 ## Known issues
 
-Dynamic `import` warning:
+(All browsers) Dynamic `import` warning:
 
 ```
 Could not resolve module specifier "require" in file "..src/start-lit-element.js".
 ```
 
 See https://github.com/Polymer/tools/issues/131.
+
+(IE11 and Edge) Warning due to `<!--!` in minified HTML:
+
+```
+Unexpected character: U+0021 EXCLAMATION MARK (!)
+Unexpected character in comment end. Expected "-->"
+```
+
+See https://github.com/Polymer/polymer-cli/issues/779.
