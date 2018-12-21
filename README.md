@@ -30,7 +30,7 @@ polymer serve
 
 ```
 npm install -g polymer-cli
-git clone https://github.com/PolymerLabs/start-lit-element.git
+git clone https://github.com/PolymerLabs/start-lit-element
 cd start-lit-element
 ```
 
