@@ -12,7 +12,7 @@ https://start-lit-element.firebaseapp.com/
 
 ```
 npm install -g polymer-cli
-git clone https://github.com/start-lit-element/start-lit-element.git
+git clone https://github.com/PolymerLabs/start-lit-element
 cd start-lit-element
 npm install
 polymer serve
@@ -30,7 +30,7 @@ polymer serve
 
 ```
 npm install -g polymer-cli
-git clone https://github.com/start-lit-element/start-lit-element.git
+git clone https://github.com/PolymerLabs/start-lit-element.git
 cd start-lit-element
 ```
 
