@@ -29,14 +29,14 @@ polymer serve
 ### Clone this repo
 
 ```
-npm install -g polymer-cli
 git clone https://github.com/PolymerLabs/start-lit-element
-cd start-lit-element
 ```
 
 ### Start a dev server
 
 ```
+npm install -g polymer-cli
+cd start-lit-element
 npm install
 polymer serve
 ```
