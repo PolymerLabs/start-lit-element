@@ -17,31 +17,31 @@ export class StartLitElement extends LitElement {
    * Define properties. Properties defined here will be automatically 
    * observed.
    */
-  static get properties(){
+  static get properties() {
     return {
-      message: String,
-      pie: Boolean
+      message: { type: String },
+      pie: { type: Boolean }
     };
   }
 
   /**  
    * In the element constructor, assign default property values.
    */
-  constructor(){
+  constructor() {
     // Must call superconstructor first.
     super();
 
     // Initialize properties
-    this.loadComplete=false;
-    this.message='Hello World from LitElement';
-    this.pie=false;
+    this.loadComplete = false;
+    this.message = 'Hello World from LitElement';
+    this.pie = false;
   }
 
   /**
    * Define a template for the new element by implementing LitElement's
    * `render` function. `render` must return a lit-html TemplateResult.
    */
-  render(){
+  render() {
     return html`
       <style>
         :host { display: block; }
@@ -67,7 +67,7 @@ export class StartLitElement extends LitElement {
    * - Call a method to load the lazy element if necessary
    * - Focus the checkbox
    */
-  firstUpdated(){
+  firstUpdated() {
     this.loadLazy();
 
     const myInput = this.shadowRoot.getElementById('myinput');
@@ -79,7 +79,7 @@ export class StartLitElement extends LitElement {
    * - Toggle whether to display <lazy-element>
    * - Call a method to load the lazy element if necessary
    */
-  togglePie(e){
+  togglePie(e) {
     this.pie = !this.pie;
     this.loadLazy();
   }
