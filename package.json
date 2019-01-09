@@ -4,6 +4,7 @@
   "description": "start-lit-element",
   "repository": "https://github.com/PolymerLabs/start-lit-element.git",
   "main": "start-lit-element.js",
+  "module": "start-lit-element.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy": "rm -rf build && rm -rf lib && mkdir -p build/node_modules/@webcomponents/webcomponentsjs && cp -r node_modules/@webcomponents/webcomponentsjs/bundles build/node_modules/@webcomponents/webcomponentsjs && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build/node_modules/@webcomponents/webcomponentsjs && cp index.html build && cp -r manifest build",
