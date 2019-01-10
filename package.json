@@ -3,27 +3,25 @@
   "version": "1.0.0",
   "description": "start-lit-element",
   "repository": "https://github.com/PolymerLabs/start-lit-element.git",
-  "main": "start-lit-element.js",
-  "module": "start-lit-element.js",
+  "main": "start-lit-element",
+  "module": "start-lit-element",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "copy": "rm -rf build && rm -rf lib && mkdir -p build/node_modules/@webcomponents/webcomponentsjs && cp -r node_modules/@webcomponents/webcomponentsjs/bundles build/node_modules/@webcomponents/webcomponentsjs && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build/node_modules/@webcomponents/webcomponentsjs && cp index.html build && cp -r manifest build",
-    "build": "npm run copy && babel src -d lib && rollup -c",
+    "clean": "rm -rf build && rm -rf lib",
+    "transp": "tsc",
+    "roll": "rollup -c",
+    "build": "npm run clean && npm run transp && npm run roll && cp index.*  build",
     "serve": "cd build && ../node_modules/.bin/serve"
   },
   "author": "The Polymer Authors",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@polymer/lit-element": "latest",
-    "@webcomponents/webcomponentsjs": "latest",
     "@babel/polyfill": "^7.2.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
-    "babel-plugin-transform-dynamic-import": "^2.1.0",
     "rollup": "^1.0.1",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",

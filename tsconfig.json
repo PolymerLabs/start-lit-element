@@ -1,0 +1,12 @@
+{
+  "include": ["src/*.ts"],
+  "compilerOptions": {
+    "outDir": "lib",
+    "downlevelIteration": true,
+    "target": "es2017",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
+    "experimentalDecorators": true
+  }
+}

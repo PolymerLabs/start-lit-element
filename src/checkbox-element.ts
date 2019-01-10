@@ -8,13 +8,13 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-// Import LitElement base class and html helper function
-import { LitElement, html } from '@polymer/lit-element';
+// Import LitElement base class, html helper function, and decorators
+import { LitElement, html, customElement } from '@polymer/lit-element';
 
-export class LazyElement extends LitElement {
+@customElement ('checkbox-element') 
+export class CheckboxElement extends LitElement {
   /**
-   * Define a template for the new element by implementing LitElement's
-   * `render` function. `render` must return a lit-html TemplateResult.
+   * Define a template
    */
   render() {
     return html`
@@ -26,5 +26,6 @@ export class LazyElement extends LitElement {
     `;
   }
 }
-// Register the element with the browser
-customElements.define('lazy-element', LazyElement);
+declare global { 
+  interface HTMLElementTagNameMap { 'checkbox-element': CheckboxElement; } 
+}
