@@ -9,7 +9,7 @@
  */
 
 // Import LitElement base class and html helper function
-import { LitElement, html } from '@polymer/lit-element';
+import { LitElement, html } from 'lit-element';
 
 export class LazyElement extends LitElement {
   /**
