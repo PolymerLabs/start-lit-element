@@ -91,10 +91,11 @@ export class StartLitElement extends LitElement {
   async loadLazy() {
     console.log('loadLazy');
     if(this.pie && !this.loadComplete) {
-      this.loadComplete = true;
       return import('./lazy-element.js').then((LazyElement) => {
+        this.loadComplete = true;
         console.log("LazyElement loaded");
       }).catch((reason) => {
+        this.loadComplete = false;
         console.log("LazyElement failed to load", reason);
       });
     }
